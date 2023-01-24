@@ -1,42 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conversor de idades</title>
-    <style>
-        input{
-           margin: 10px 0;
-        }
-        
-        .label_m_d_y {
-            margin: 0 5px;
-        }
-
-        #result {
-            margin-top: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div>
-        <label for="years" class="label_m_d_y"><input type="radio" name="years_months_days" id="years" onclick="clearScreen()" checked>Anos</label>
-        <label for="months" class="label_m_d_y"><input type="radio" name="years_months_days" id="months" onclick="clearScreen()">Meses</label>
-        <label for="days" class="label_m_d_y"><input type="radio" name="years_months_days" id="days" onclick="clearScreen()">Dias</label><br>
+    <h1>Conversor de idades</h1>
+    <section>
+        <div class="year_month_day">
+            <label for="years" class="label_m_d_y"><input type="radio" name="years_months_days" id="years"
+                    onclick="clearScreen()" checked>Anos</label>
+            <label for="months" class="label_m_d_y"><input type="radio" name="years_months_days" id="months"
+                    onclick="clearScreen()">Meses</label>
+            <label for="days" class="label_m_d_y"><input type="radio" name="years_months_days" id="days"
+                    onclick="clearScreen()">Dias</label><br>
+        </div>
 
-        <label for="day_of_birth">Digite o dia em que você nasceu</label>
-        <input type="number" name="birth_date" id="day_of_birth"><br>
-        <label for="month_of_birth">Digite o mês em que você nasceu</label>
-        <input type="number" name="birth_date" id="month_of_birth"><br>
-        <label for="year_of_birth">Digite o ano em que você nasceu</label>
-        <input type="number" name="birth_date" id="year_of_birth"><br>
+        <div class="day_birth">
+            <div>
+                <label for="day_of_birth">Digite o dia em que você nasceu</label>
+                <input type="number" name="birth_date" id="day_of_birth"><br>
+                <label for="month_of_birth">Digite o mês em que você nasceu</label>
+                <input type="number" name="birth_date" id="month_of_birth"><br>
+                <label for="year_of_birth">Digite o ano em que você nasceu</label>
+                <input type="number" name="birth_date" id="year_of_birth"><br>
 
-        <button onclick="calculateAge()">Calcular</button>
-    </div>
+                <div class="button">
+                    <button class="button_calculate" onclick="calculateAge()">Calcular</button>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div id="result"></div>
+    <section class="age" id="result"></section>
 
     <script src="script.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,62 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    background-color: #dceaf3;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 35px;
+    text-align: center;
+    margin: 1rem 0 2rem 0;
+}
+
+.year_month_day {
+    text-align: center;
+}
+
+.year_month_day label {
+    font-size: 16px;
+    margin: 0.5rem;
+}
+
+.day_birth {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.day_birth label {
+    display: block;
+}
+
+.day_birth input {
+    font-size: 16px;
+    width: 100%;
+    margin: 0.5rem 0 1rem 0;
+    padding: 5px 0.5rem;
+    border-radius: 3px;
+}
+
+.button {
+    /* margin: 1rem; */
+    text-align: center;
+}
+
+.button_calculate {
+    font-size: 16px;
+    width: 70%;
+    padding: 0.5rem 0;
+    background-color: #408edc;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.age {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 2rem;
+}
