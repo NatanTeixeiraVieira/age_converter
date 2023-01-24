@@ -1,11 +1,15 @@
-<h1>Age Converter</h1>
+<h1 align="center">Age Converter</h1>
 
 <p>Este projeto converte uma data de nascimento em idade, onde o resultado pode ser em um dos seguintes:</p>
-<ul>
-    <li>Anos, meses e dias;</li>
-    <li>Meses e dias;</li>
-    <li>Dias.</li>
-</ul>
+
+- Anos, meses e dias;
+- Meses e dias;
+- Dias.
+
+<p align="center">
+    <a href="#tecnologias">Tecnologias</a> &nbsp;&nbsp;•&nbsp;&nbsp;
+    <a href="#testar">Testar</a>
+</p>
 
 ---
 <br>
