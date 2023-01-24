@@ -5,7 +5,7 @@ const currentDay = date.getDate()
 
 const result = document.getElementById('result')
 
-function calculateAge() {
+const calculateAge = () => {
     const inputNumberDay = document.getElementById('day_of_birth')
     const inputNumberMonth = document.getElementById('month_of_birth')
     const inputNumberYear = document.getElementById('year_of_birth')
@@ -31,7 +31,7 @@ function calculateAge() {
     }
 }
 
-function calculateInYears(dayBirth, monthBirth, yearBirth) {
+const calculateInYears = (dayBirth, monthBirth, yearBirth) => {
     let yearsOfLife = currentYear - yearBirth
     let monthsOfLife = currentMounth - monthBirth
     let daysOfLife = currentDay - dayBirth
@@ -101,7 +101,7 @@ function calculateInYears(dayBirth, monthBirth, yearBirth) {
     }
 }
 
-function calculateInMonths(dayBirth, monthBirth, yearBirth) {
+const calculateInMonths = (dayBirth, monthBirth, yearBirth) => {
     let monthsOfLife = (currentYear - yearBirth) * 12 + (currentMounth - monthBirth)
     let daysOfLife = currentDay - dayBirth
 
@@ -144,7 +144,7 @@ function calculateInMonths(dayBirth, monthBirth, yearBirth) {
     }
 }
 
-function calculateInDays(dayBirth, monthBirth, yearBirth) {
+const calculateInDays = (dayBirth, monthBirth, yearBirth) => {
     let daysOfLifeInMonthBirthAndInCurrentMonth = 0
 
     if (currentMounth == monthBirth && currentYear == yearBirth) {
@@ -180,7 +180,7 @@ function calculateInDays(dayBirth, monthBirth, yearBirth) {
 
 }
 
-function clearScreen() {
+const clearScreen = () => {
     result.innerHTML = ''
 }
 
